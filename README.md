@@ -35,7 +35,7 @@ To deploy the suite and its dependencies automatically, use the provided `use.sh
 
 ```bash
 # Clone the repository
-git clone [https://github.com/MUHAMMEDKAGANTURKYILMAZ/Professional-Multi-Tool-Suite.git](https://github.com/MUHAMMEDKAGANTURKYILMAZ/Professional-Multi-Tool-Suite.git)
+git clone [https://github.com/MUHAMMEDKAGANTURKYILMAZ/Professional-Multi-Tool-Suite-.git](https://github.com/MUHAMMEDKAGANTURKYILMAZ/Professional-Multi-Tool-Suite-.git)
 
 # Navigate to directory
 cd Professional-Multi-Tool-Suite
