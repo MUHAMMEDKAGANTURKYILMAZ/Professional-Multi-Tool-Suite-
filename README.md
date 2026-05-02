@@ -47,5 +47,6 @@ chmod +x use.sh
 ./use.sh
  ```
 
-**If you want to buy me a coffee for my effort,
-solona:2R8s8z7cEiUVs44BGq5dsz3XhnvyXpirqk7bLieC2q4y**
+*If you want to buy me a coffee for my effort*
+
+*Donation Address solona:2R8s8z7cEiUVs44BGq5dsz3XhnvyXpirqk7bLieC2q4y*
