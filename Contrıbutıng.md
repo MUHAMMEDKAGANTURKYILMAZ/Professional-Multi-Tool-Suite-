@@ -32,3 +32,5 @@
 ## Issues
 
 - ​Use GitHub Issues for bug reports or feature requests.
+
+- By sharing the repo, you will be considered a developer of the project. 
