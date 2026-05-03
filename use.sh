@@ -140,9 +140,9 @@ install_system_packages() {
 
 setup_script() {
     print_step "Setting Up Script"
-    SCRIPT_PATH="$(cd "$(dirname "$0")" && pwd)/.w.py"
+    SCRIPT_PATH="$(cd "$(dirname "$0")" && pwd)/w.py"
     if [ ! -f "$SCRIPT_PATH" ]; then
-        print_error ".w.py not found in current directory"
+        print_error "w.py not found in current directory"
         exit 1
     fi
     chmod +x "$SCRIPT_PATH"
@@ -151,7 +151,7 @@ setup_script() {
 
 launch_app() {
     print_step "Launching Multi-Tool Suite"
-    SCRIPT_PATH="$(cd "$(dirname "$0")" && pwd)/.w.py"
+    SCRIPT_PATH="$(cd "$(dirname "$0")" && pwd)/w.py"
     print_info "Starting..."
     sleep 1
     clear
