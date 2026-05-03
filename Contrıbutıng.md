@@ -15,16 +15,13 @@
 
 2. Create your branch: 
    ```bash
-   git checkout -b feature/AmazingFeature
-```
+   git checkout -b feature/AmazingFeature```
 
 3. Commit changes:
-   ```git commit -m 'Add AmazingFeature'
-```
+   ```git commit -m 'Add AmazingFeature'```
 
 4. Push to branch:
-   ```git push origin feature/AmazingFeature
-```
+   ```git push origin feature/AmazingFeature```
 
 5. Open a Pull Request
 
