@@ -15,3 +15,5 @@ mv .w.py .w.py && mv .p.txt .p.txt
 ---
 
 *With this command, the files in your code will become hidden files and will run when you start the sh file*
+
+*Under normal circumstances, legitimate tools do not try to hide themselves from the user. This is a method used by tools that want to work without leaving traces on the system (for example, pentest tools or sometimes malware), but we normally wouldn't make the code open source, so we used it to run files with names with a dot at the beginning of the files.*
