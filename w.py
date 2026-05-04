@@ -8,7 +8,9 @@ Version: 3.0.0
 
 import os
 import sys
-import json                                                                      import time                                                                      import base64
+import json
+import time
+import base64
 import hashlib
 import random
 import string
@@ -19,14 +21,18 @@ from datetime import datetime, timedelta
 
 # COLOR CONFIGURATION
 class Colors:
-    HEADER = '\033[95m'                                                              BLUE = '\033[94m'                                                                CYAN = '\033[96m'
+    HEADER = '\033[95m'
+    BLUE = '\033[94m'
+    CYAN = '\033[96m'
     GREEN = '\033[92m'
     WARNING = '\033[93m'
     FAIL = '\033[91m'
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-    DARKCYAN = '\033[36m'                                                            MAGENTA = '\033[35m'                                                             WHITE = '\033[97m'
+    DARKCYAN = '\033[36m'
+    MAGENTA = '\033[35m'
+    WHITE = '\033[97m'
     GRAY = '\033[90m'
 
 # LANGUAGE CONFIGURATION - 30 Languages
