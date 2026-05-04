@@ -1003,7 +1003,7 @@ def main():
         lang = select_language()
         config['language'] = lang
         save_config(config)
-    els
+    else:
         lang = config['language']
     config = setup_groq_api(config, lang)
     show_main_menu(config, lang)
