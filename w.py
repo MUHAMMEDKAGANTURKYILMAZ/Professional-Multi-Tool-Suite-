@@ -1,6 +1,3 @@
-
-# Tamamen sıfırdan, düzgün bir .w.py yazalım - hiçbir oluşturma kodu olmadan
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -11,9 +8,7 @@ Version: 3.0.0
 
 import os
 import sys
-import json
-import time
-import base64
+import json                                                                      import time                                                                      import base64
 import hashlib
 import random
 import string
@@ -24,18 +19,14 @@ from datetime import datetime, timedelta
 
 # COLOR CONFIGURATION
 class Colors:
-    HEADER = '\033[95m'
-    BLUE = '\033[94m'
-    CYAN = '\033[96m'
+    HEADER = '\033[95m'                                                              BLUE = '\033[94m'                                                                CYAN = '\033[96m'
     GREEN = '\033[92m'
     WARNING = '\033[93m'
     FAIL = '\033[91m'
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
-    DARKCYAN = '\033[36m'
-    MAGENTA = '\033[35m'
-    WHITE = '\033[97m'
+    DARKCYAN = '\033[36m'                                                            MAGENTA = '\033[35m'                                                             WHITE = '\033[97m'
     GRAY = '\033[90m'
 
 # LANGUAGE CONFIGURATION - 30 Languages
@@ -415,14 +406,14 @@ def ai_assistant(config, lang):
         try:
             headers = {
                 'Authorization': f'Bearer {groq_key}',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'
             }
             messages = [{"role": "system", "content": system_prompt}]
             if memory:
                 messages.append({"role": "assistant", "content": f"Previous context: {memory[-2000:]}"})
             messages.append({"role": "user", "content": user_input})
             data = json.dumps({
-                "model": "llama3-70b-8192",
+                "model": "llama-3.3-70b-versatile",
                 "messages": messages,
                 "temperature": 0.7,
                 "max_tokens": 4096
@@ -1012,7 +1003,7 @@ def main():
         lang = select_language()
         config['language'] = lang
         save_config(config)
-    else:
+    els
         lang = config['language']
     config = setup_groq_api(config, lang)
     show_main_menu(config, lang)
@@ -1024,4 +1015,3 @@ if __name__ == "__main__":
         clear_screen()
         print(f"\n{Colors.GREEN}Goodbye!{Colors.ENDC}\n")
         sys.exit(0)
-
